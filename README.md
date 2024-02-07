@@ -37,6 +37,8 @@ technology, lifestyle, travel, and more.
 - Integration of web content using WebView
 - Lottie animation rendering for enhanced visual experience
 - Cross-platform compatibility for Android and iOS devices
+- Dynamic color suppoert(Android)
+- Dark theme support
 
 ### Technologies & Architecture Used
 
