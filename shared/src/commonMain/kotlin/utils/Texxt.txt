@@ -1,0 +1,31 @@
+ val htmlText =
+        "<p>Are you building a location-aware Android app and struggling with implementing location permissions? Look no further! In this article, we'll walk through a comprehensive guide on handling location permissions in an Android app, complete with code snippets and explanatory images.</p><br><h2>The Importance of Location Permissions</h2><p>Location permissions are crucial for apps that rely on geolocation data. Whether you're building a mapping app, a fitness tracker, or a weather application, obtaining user consent for accessing location information is a fundamental step.</p><br><h2>Meet the LocationPermissionApp</h2><p>Our guide will use a sample Android application, named LocationPermissionApp, authored by Prashant Singh. This app showcases best practices for managing location permissions and includes features like a permission dialog and direct access to app settings.</p><br><h3>Getting Started with MainActivity</h3><pre style=\"background-color: black; color: #fff; padding: 10px; text-wrap: wrap; border-radius: 5px;\"><code>// MainActivity.kt\nclass MainActivity : ComponentActivity() {\n// ... (code snippets above)\n}\n</code></pre><p>The <code>MainActivity</code> uses a <code>MutableStateFlow</code> to manage the location permission state. It also employs <code>ActivityResultLauncher</code> for handling activity results and a custom <code>RequestPermission</code> for managing location permission requests.</p><br><h3>Location Permission Dialog</h3><pre style=\"background-color: black; text-wrap: wrap;color: #fff; padding: 10px; border-radius: 5px;\"><code>// MainActivity.kt\n@Composable\nfun LocationPermissionDialog(onDismiss: () -&gt; Unit) {\n// ... (code snippets above)\n}\n</code></pre><p>The <code>LocationPermissionDialog</code> is a composable function that displays a dialog requesting location permission. It includes a customizable title, informative text, and an \"OK\" button to dismiss the dialog.</p><br><h3>Location Permission Screen</h3><pre style=\"background-color: black; color: #fff; text-wrap: wrap;padding: 10px; border-radius: 5px;\"><code>// MainActivity.kt\n@Composable\nfun LocationPermissionScreen(\nactivity: MainActivity,\nisPermissionGranted: Boolean,\nlocationPermissionLauncher: ActivityResultLauncher&lt;String&gt;,\nopenSetting: () -&gt; Unit,\n) {\n// ... (code snippets above)\n}\n</code></pre><p>The <code>LocationPermissionScreen</code> composable function represents the main screen of the app. It provides information based on the permission status and includes a button to request location permission.</p><br><h2>How to Use the LocationPermissionApp</h2><ol><li><strong>Clone the Repository:</strong> Execute the following command in your terminal to clone the LocationPermissionApp repository:</li></ol><pre style=\"background-color: black; text-wrap: wrap; color: #fff; padding: 10px; border-radius: 5px;\"><code>git clone https://github.com/prashant17d97/LocationPermissionApp.git</code></pre><ol start=\"2\"><li><strong>Open in Android Studio:</strong> Open the project in Android Studio to explore the code and run the app on an emulator or device.</li><li><strong>Run the App:</strong> Build and run the app to see how location permissions are handled in action.</li></ol><br><h2>Conclusion</h2><p>Implementing location permissions in your Android app doesn't have to be a headache. By following the example set by LocationPermissionApp, you can seamlessly integrate location-related functionality into your application, providing a smooth and user-friendly experience.</p><p>Unlock the power of location in your app today!</p><p><strong>Author:</strong> Prashant Singh<br><strong>GitHub:</strong> <a href=\"https://github.com/prashant17d97\">prashant17d97</a></p><p><strong>License:</strong> This project is licensed under the MIT License - see the <a href=\"https://www.debugdesk.in\">LICENSE.md</a> file for details.</p><br>"
+
+    AppColumn(
+        modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState())
+    ) {
+        /*Box(modifier = Modifier.size(200.dp).background(Color.Red))
+        Spacer(modifier = Modifier.size(20.dp).background(Color.Transparent))
+        Box(modifier = Modifier.size(200.dp).background(Color.Red))
+        Spacer(modifier = Modifier.size(20.dp).background(Color.Transparent))
+        Box(modifier = Modifier.size(200.dp).background(Color.Red))
+        Spacer(modifier = Modifier.size(20.dp).background(Color.Transparent))
+        Box(modifier = Modifier.size(200.dp).background(Color.Red))
+        Spacer(modifier = Modifier.size(20.dp).background(Color.Transparent))
+        Box(modifier = Modifier.size(200.dp).background(Color.Red))
+        Spacer(modifier = Modifier.size(20.dp).background(Color.Transparent))*/
+        LoadHtmlContent(
+            modifier = Modifier.height(900.dp),
+            htmlContent = htmlText.formattedHtml(MaterialTheme.colorScheme.background)
+        )
+        /*Box(modifier = Modifier.size(200.dp).background(Color.Red))
+        Spacer(modifier = Modifier.size(20.dp).background(Color.Transparent))
+        Box(modifier = Modifier.size(200.dp).background(Color.Red))
+        Spacer(modifier = Modifier.size(20.dp).background(Color.Transparent))
+        Box(modifier = Modifier.size(200.dp).background(Color.Red))
+        Spacer(modifier = Modifier.size(20.dp).background(Color.Transparent))
+        Box(modifier = Modifier.size(200.dp).background(Color.Red))
+        Spacer(modifier = Modifier.size(20.dp).background(Color.Transparent))
+        Box(modifier = Modifier.size(200.dp).background(Color.Red))
+        Spacer(modifier = Modifier.size(20.dp).background(Color.Transparent))*/
+    }
