@@ -150,6 +150,6 @@ optimizations in progress.
 For further communication or inquiries, feel free to contact:
 
 - [Prashant Singh](https://www.prashantsingh.online)
-- Email: [prashantsinghsca@gmail.com](mainlto:prashantsinghsca@gmail.com)
+- Email: [prashantsinghsca@gmail.com](mailto:prashantsinghsca@gmail.com)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/prashant-d97/)
 - GitHub: [GitHub](https://github.com/prashant17d97)
